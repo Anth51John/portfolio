@@ -9,20 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Anthony's Portfolio</title>
+    <title>Professional Resume</title>
 </head>
   <body>
-     <!-- Navbar -->
-     <nav class="navbar navbar-expand-lg bg-dark navbar-light">
-        <div class="container nav-custom">
+      <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light">
+        <div class="container-fluid nav-custom">
           
-          <a href="index.html" class="navbar-brand"><img class="img-fluid w-100 logo" src="img/antjohn.png" alt="written-name-in-circular-sphere"></a>
+          <a href="index.html" class="navbar-brand"><img class="img-fluid w-50 logo" src="img/antjohn.png" alt="written-name-in-circular-sphere"></a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
   
-            <butoon class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-              <span class="navbar-toggler-icon"></span>
-            </butoon>
-          
-            <div class="collapse navbar-collapse text-light nav-custom" id="navmenu">
+            <div class="collapse navbar-collapse text-light nav-custom myheader" id="navmenu">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a href="index.html" class="nav-link">Home</a>
@@ -33,40 +33,34 @@
               <li class="nav-item">
                 <a href="blog.html" class="nav-link">Blog</a>
               </li>
-              <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" id="pagesDropdownMenuLink1" href="projects.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Designs
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="pagesDropdownMenuLink1">
+                        <li><a class="dropdown-item" href="projects.html">Projects Homepage</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="https://wcet.waketech.edu/ajohnson2/web225/divgameverse/">Joomla CMS Project</a></li>
+                        <li><a class="dropdown-item" href="https://wcet.waketech.edu/ajohnson2/web140/viciouscycles/index.html">HTML/CSS website development</a></li>
+                        <li><a class="dropdown-item" href="https://wcet.waketech.edu/ajohnson2/web210/portfolio/index.html">Simplified Portfolio Project</a></li>
+                        <li><a class="dropdown-item" href="https://wcet.waketech.edu/ajohnson2/WEB250/wordpress/">WordPress Portfolio Project</a></li>
+                      </ul>
+                    </li>
+  
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="projects.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Designs
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                      <li><a class="dropdown-item" href="projects.html">Projects Homepage</a></li>
-                      <li><a class="dropdown-item" href="https://wcet.waketech.edu/ajohnson2/web225/divgameverse/">Joomla CMS Project</a></li>
-                      <li><a class="dropdown-item" href="https://wcet.waketech.edu/ajohnson2/web140/viciouscycles/index.html">HTML/CSS website development</a></li>
-                      <li><a class="dropdown-item" href="https://wcet.waketech.edu/ajohnson2/web210/portfolio/index.html">Simplified Portfolio Project</a></li>
-                      <li><a class="dropdown-item" href="https://wcet.waketech.edu/ajohnson2/WEB250/wordpress/">WordPress Portfolio Project</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="about.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" id="pagesDropdownMenuLink2" href="about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       About
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="pagesDropdownMenuLink2">
                       <li><a class="dropdown-item" href="about.html">About</a></li>
                       <li><a class="dropdown-item" href="contact.html">Contact Me</a></li>
-                      <li><a class="dropdown-item" href="#">Additional Page</a></li>
+
                     </ul>
                   </li>
-                </ul>
-              </div>
             </ul>
           </div>
         </div>
-      </nav>
+      </nav>  
     
       <!-- Hero Panel -->
     <section class="bg-dark text-light w-100 text-center m-0 p-0">
@@ -90,16 +84,16 @@
         <hr>
       <div class="container">
         <br>
-        <h2 align="center">
+        <h2 class="name-title">
           <strong>Anthony Johnson, MBA</strong>
         </h2>
-      <p align="center">
+      <p class="name-title">
           Durham, NC 27703 | Phone: (919) 937-3470 | E-Mail:
-          Anthony.johnson816@gmail.com |
+          <a href="mailto:Anthony.johnson816@gmail.com">anthony.johnson816@gmail.com</a> |
           <a href="https://www.linkedin.com/in/anth51john">
               https://www.linkedin.com/in/anth51john
           </a>
-          | Desired Job Title: Customer Care Analyst
+          | Desired Job Title: Web Developer/Customer Care Analyst
       </p>
       <h2>
           PROFESSIONAL SUMMARY
@@ -111,132 +105,53 @@
           progressive organization.
       </p>
       <h2>
-          AREA OF EXPERTISE
+          AREAS OF EXPERTISE
       </h2>
-      <table border="1" cellspacing="0" cellpadding="0">
+      <table id="tbl-area-expertise">
           <tbody>
               <tr>
-                  <td width="222" valign="top">
-                      <p>
-                          Partnership Building
-                      </p>
-                  </td>
-                  <td width="186" valign="top">
-                      <p>
-                          Standard Operating Procedures
-                      </p>
-                  </td>
-                  <td width="216" valign="top">
-                      <p>
-                          Customer Service
-                      </p>
-                  </td>
+                  <td>Partnership Building</td>
+                  <td>Standard Operating Procedures</td>
+                  <td>Customer Service</td> 
               </tr>
               <tr>
-                  <td width="222" valign="top">
-                      <p>
-                          Policies and Procedures
-                      </p>
-                  </td>
-                  <td width="186" valign="top">
-                      <p>
-                          Program Management
-                      </p>
-                  </td>
-                  <td width="216" valign="top">
-                      <p>
-                          Strong passion for learning
-                      </p>
-                  </td>
+                  <td >Policies and Procedures</td>
+                  <td>Program Management</td>
+                  <td>Strong passion for learning</td>
               </tr>
               <tr>
-                  <td width="222" valign="top">
-                      <p>
-                          System Integration and Testing
-                      </p>
-                  </td>
-                  <td width="186" valign="top">
-                      <p>
-                          Project Management
-                      </p>
-                  </td>
-                  <td width="216" valign="top">
-                      <p>
-                          Process Improvement
-                      </p>
-                  </td>
+                <td>System Integration and Testing</td>
+                <td>Project Management</td>
+                <td>Process Improvement</td>
               </tr>
               <tr>
-                  <td width="222" valign="top">
-                      <p>
-                          Software Documentation
-                      </p>
-                  </td>
-                  <td width="186" valign="top">
-                      <p>
-                          Business Analysis
-                      </p>
-                  </td>
-                  <td width="216" valign="top">
-                      <p>
-                          Team Leadership and Management
-                      </p>
-                  </td>
+                <td>Software Documentation</td>
+                <td>Business Analysis</td>
+                <td>Team Leadership and Management</td>
               </tr>
               <tr>
-                  <td width="222" valign="top">
-                      <p>
-                          Active and Empathic Listening
-                      </p>
-                  </td>
-                  <td width="186" valign="top">
-                      <p>
-                          Change Management
-                      </p>
-                  </td>
-                  <td width="216" valign="top">
-                      <p>
-                          Software Support and Training
-                      </p>
-                  </td>
+                <td>Active and Empathic Listening</td>
+                <td>Change Management</td>
+                <td>Software Support and Training</td>
               </tr>
               <tr>
-                  <td width="222" valign="top">
-                      <p>
-                          Communications (Oral, Written, and Presentation)
-                      </p>
-                  </td>
-                  <td width="186" valign="top">
-                      <p>
-                          IT Customer Service
-                      </p>
-                  </td>
-                  <td width="216" valign="top">
-                      <p>
-                          Problem-solving
-                      </p>
-                  </td>
+                <td>Communications (Oral, Written, and Presentation)</td>
+                <td>IT Customer Service</td>
+                <td>Problem-solving</td>
               </tr>
               <tr>
-                  <td width="222" valign="top">
-                      <p>
-                          Website Design
-                      </p>
-                  </td>
-                  <td width="186" valign="top">
-                      <p>
-                          Qualitative Research
-                      </p>
-                  </td>
-                  <td width="216" valign="top">
-                  </td>
+                <td>Website Design</td>
+                <td>Qualitative Research</td>
+                <td></td>
               </tr>
           </tbody>
       </table>
+      <br>
       <h2>
           TECHNICAL PROFICIENCIES
       </h2>
-      <table border="1" cellspacing="0" cellpadding="0">
+      <br>
+      <table id="tbl-tech-proficiency">
           <tbody>
               <tr>
                   <td width="623" colspan="3" valign="top">
@@ -247,210 +162,82 @@
                   </td>
               </tr>
               <tr>
-                  <td width="208" valign="top">
-                      <p>
-                          HTML/CSS
-                      </p>
-                  </td>
-                  <td width="248" valign="top">
-                      <p>
-                          JavaScript
-                      </p>
-                  </td>
-                  <td width="168" valign="top">
-                      <p>
-                          PHP
-                      </p>
-                  </td>
+                <td>Partnership Building</td>
+                <td>Standard Operating Procedures</td>
+                <td>Customer Service</td> 
+            </tr>
+            <tr>
+                <td >Policies and Procedures</td>
+                <td>Program Management</td>
+                <td>Strong passion for learning</td>
+            </tr>
+            <tr>
+              <td>System Integration and Testing</td>
+              <td>Project Management</td>
+              <td>Process Improvement</td>
+            </tr>
+            <tr>
+              <td>Software Documentation</td>
+              <td>Business Analysis</td>
+              <td>Team Leadership and Management</td>
+            </tr>
+            <tr>
+              <td>Active and Empathic Listening</td>
+              <td>Change Management</td>
+              <td>Software Support and Training</td>
+            </tr>
+            <tr>
+              <td>Communications (Oral, Written, and Presentation)</td>
+              <td>IT Customer Service</td>
+              <td>Problem-solving</td>
+            </tr>
+            <tr>
+              <td>Website Design</td>
+              <td>Qualitative Research</td>
+              <td></td>
+            </tr>
+            <tr>
+                <td width="623" colspan="3" valign="top">
+                    <p align="center">
+                        <strong>Information Technology</strong>
+                        <strong></strong>
+                    </p>
+                </td>
               </tr>
               <tr>
-                  <td width="208" valign="top">
-                      <p>
-                          C#
-                      </p>
-                  </td>
-                  <td width="248" valign="top">
-                      <p>
-                          Data Analysis
-                      </p>
-                  </td>
-                  <td width="168" valign="top">
-                      <p>
-                          Database Management
-                      </p>
-                  </td>
+                  <td>System Integration and Testing</td>
+                  <td>ITIL</td>
+                  <td>Microsoft Office Products</td>
               </tr>
               <tr>
-                  <td width="208" valign="top">
-                      <p>
-                          Responsive Design
-                      </p>
-                  </td>
-                  <td width="248" valign="top">
-                      <p>
-                          UX research
-                      </p>
-                  </td>
-                  <td width="168" valign="top">
-                      <p>
-                          Wireframing
-                      </p>
-                  </td>
+                  <td>PC Inventory Management</td>
+                  <td>Business Analysis</td>
+                  <td>Microsoft SQL Server</td>
               </tr>
               <tr>
-                  <td width="208" valign="top">
-                      <p>
-                          WordPress /Joomla CMS Design
-                      </p>
-                  </td>
-                  <td width="248" valign="top">
-                      <p>
-                          UI/UX Principles
-                      </p>
-                  </td>
-                  <td width="168" valign="top">
-                      <p>
-                          SEO Principles
-                      </p>
-                  </td>
+                  <td>Software Documentation</td>
+                  <td>Change Management</td>
+                  <td>Unix</td>
               </tr>
               <tr>
-                  <td width="208" valign="top">
-                      <p>
-                          FileZilla
-                      </p>
-                  </td>
-                  <td width="248" valign="top">
-                  </td>
-                  <td width="168" valign="top">
-                  </td>
+                  <td>Training</td>
+                  <td>Cisco Webex/Zoom Communications</td>
+                  <td>Windows 11</td>
               </tr>
               <tr>
-                  <td width="623" colspan="3" valign="top">
-                      <p align="center">
-                          <strong>Information Technology</strong>
-                          <strong></strong>
-                      </p>
-                  </td>
+                  <td>Salesforce</td>
+                  <td>Team Leadership and Management</td>
+                  <td>Crystal Reports</td>
               </tr>
               <tr>
-                  <td width="208" valign="top">
-                      <p>
-                          System Integration and Testing
-                      </p>
-                  </td>
-                  <td width="248" valign="top">
-                      <p>
-                          ITIL
-                      </p>
-                  </td>
-                  <td width="168" valign="top">
-                      <p>
-                          Microsoft Office Products
-                      </p>
-                  </td>
+                  <td> Communications</td>
+                  <td>Oracle Database SQL</td>
+                  <td>Software Support</td>
               </tr>
               <tr>
-                  <td width="208" valign="top">
-                      <p>
-                          PC Inventory Management
-                      </p>
-                  </td>
-                  <td width="248" valign="top">
-                      <p>
-                          Business Analysis
-                      </p>
-                  </td>
-                  <td width="168" valign="top">
-                      <p>
-                          Microsoft SQL Server
-                      </p>
-                  </td>
-              </tr>
-              <tr>
-                  <td width="208" valign="top">
-                      <p>
-                          Software Documentation
-                      </p>
-                  </td>
-                  <td width="248" valign="top">
-                      <p>
-                          Change Management
-                      </p>
-                  </td>
-                  <td width="168" valign="top">
-                      <p>
-                          Unix
-                      </p>
-                  </td>
-              </tr>
-              <tr>
-                  <td width="208" valign="top">
-                      <p>
-                          Training
-                      </p>
-                  </td>
-                  <td width="248" valign="top">
-                      <p>
-                          Cisco Webex/Zoom Communications
-                      </p>
-                  </td>
-                  <td width="168" valign="top">
-                      <p>
-                          Windows 11
-                      </p>
-                  </td>
-              </tr>
-              <tr>
-                  <td width="208" valign="top">
-                      <p>
-                          Salesforce
-                      </p>
-                  </td>
-                  <td width="248" valign="top">
-                      <p>
-                          Team Leadership and Management
-                      </p>
-                  </td>
-                  <td width="168" valign="top">
-                      <p>
-                          Crystal Reports
-                      </p>
-                  </td>
-              </tr>
-              <tr>
-                  <td width="208" valign="top">
-                      <p>
-                          Communications
-                      </p>
-                  </td>
-                  <td width="248" valign="top">
-                      <p>
-                          Oracle Database SQL
-                      </p>
-                  </td>
-                  <td width="168" valign="top">
-                      <p>
-                          Software Support
-                      </p>
-                  </td>
-              </tr>
-              <tr>
-                  <td width="208" valign="top">
-                      <p>
-                          Microsoft Skype
-                      </p>
-                  </td>
-                  <td width="248" valign="top">
-                      <p>
-                          Remedy Service Management
-                      </p>
-                  </td>
-                  <td width="168" valign="top">
-                      <p>
-                          Problem-solving
-                      </p>
-                  </td>
+                  <td>Microsoft Skype</td>
+                  <td>Remedy Service Management</td>
+                  <td>Problem-solving</td>
               </tr>
               <tr>
                   <td width="623" colspan="3" valign="top">
@@ -461,69 +248,53 @@
                   </td>
               </tr>
               <tr>
-                  <td width="208" valign="top">
-                      <p>
-                          Blue Yonder WMS
-                      </p>
-                  </td>
-                  <td width="248" valign="top">
-                  </td>
-                  <td width="168" valign="top">
-                  </td>
+                  <td>Blue Yonder WMS</td>
+                  <td></td>
+                  <td></td>
               </tr>
-              <tr>
-                  <td width="208" valign="top">
-                  </td>
-                  <td width="248" valign="top">
-                  </td>
-                  <td width="168" valign="top">
-                  </td>
-              </tr>
+ 
           </tbody>
       </table>
+      <br>
       <h2>
           EDUCATION &amp; CERTIFICATIONS
       </h2>
+      <br>
       <p>
           <strong>Wake Tech Community College 2019 - Present</strong>
       </p>
-      <p>
+      <p style="padding-left:75px;">
           Information Technology: Web Developer
-      </p>
-      <p>
-          <strong> </strong>
       </p>
       <p>
           <strong>University of Phoenix School of Advanced Studies </strong>
       </p>
-      <p>
-          Doctor of Business Administration
+      <p style="padding-left:75px;">
+          Doctor of Business Administration Studies
       </p>
       <p>
           <strong>University of Phoenix – Kansas City Campus </strong>
       </p>
-      <p>
+      <p style="padding-left:75px;">
           Master of Business Administration
       </p>
       <p>
           <strong>Park University </strong>
       </p>
-      <p>
+      <p style="padding-left:75px;">
           Bachelor’s Degree, Computer Information Systems
       </p>
-      <h2>
-      </h2>
+
       <p>
           <strong>Blue Yonder Certifications</strong>
       </p>
-      <p>
+      <p style="padding-left:75px;">
           Warehouse Management Functional Consultant
       </p>
-      <p>
+      <p style="padding-left:75px;">
           Warehouse Management Technical Consultant
       </p>
-      <h2>
-      </h2>
+    <br>
       <h2>
           PROFESSIONAL EXPERIENCE
       </h2>
@@ -757,11 +528,11 @@
 
     </section>
     <hr>
-    <div class="footer-dark">
+    <div class="footer-dark text-center">
       <footer>
-          <div class="container">
+          <div class="container-fluid">
               <div class="row">
-                  <div class="col-sm-6 col-md-3 item">
+                  <div class="col-sm-9 col-md-3 item">
                       <h3>Services</h3>
                       <ul>
                           <li>Web design</li>
@@ -783,14 +554,15 @@
                         <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
                         <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
                         <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="#" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a></li><br>
-                        <a href="mailto: ajohnson2@my.waketech.edu">Email Me</a>
+                        <li class="list-inline-item"><a href="#" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a></li>
                       </ul>
+                      <a href="mailto:ajohnson2@my.waketech.edu">Email Me</a>
                   </div>
                   <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
               </div>
-              <p class=""><div class="footcopy">&copy;<em id="date"><span><script>document.write( new Date().getUTCFullYear() );</script></span> - Anthony Johnson - Durham, NC</em></div></p>
+             
           </div>
+          <div class="footcopy">&copy;<em id="date"><span><script>document.write( new Date().getUTCFullYear() );</script></span> - Anthony Johnson - Durham, NC</em></div>
       </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

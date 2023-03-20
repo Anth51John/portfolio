@@ -14,15 +14,15 @@
   <body>
      <!-- Navbar -->
      <nav class="navbar navbar-expand-lg bg-dark navbar-light">
-      <div class="container nav-custom">
+      <div class="container-fluid nav-custom">
         
-        <a href="index.html" class="navbar-brand"><img class="img-fluid w-100 logo" src="img/antjohn.png" alt="written-name-in-circular-sphere"></a>
+        <a href="index.html" class="navbar-brand"><img class="img-fluid w-50 logo" src="img/antjohn.png" alt="written-name-in-circular-sphere"></a>
 
-          <butoon class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
             <span class="navbar-toggler-icon"></span>
-          </butoon>
+          </button>
         
-          <div class="collapse navbar-collapse text-light nav-custom" id="navmenu">
+          <div class="collapse navbar-collapse text-light nav-custom myheader" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a href="index.html" class="nav-link">Home</a>
@@ -33,36 +33,30 @@
             <li class="nav-item">
               <a href="blog.html" class="nav-link">Blog</a>
             </li>
-            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-              <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="projects.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Designs
+                    </a>
+                    <ul class="dropdown-menu  dropdown-menu-end dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" href="projects.html">Projects Homepage</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="https://wcet.waketech.edu/ajohnson2/web225/divgameverse/">Joomla CMS Project</a></li>
+                      <li><a class="dropdown-item" href="https://wcet.waketech.edu/ajohnson2/web140/viciouscycles/index.html">HTML/CSS website development</a></li>
+                      <li><a class="dropdown-item" href="https://wcet.waketech.edu/ajohnson2/web210/portfolio/index.html">Simplified Portfolio Project</a></li>
+                      <li><a class="dropdown-item" href="https://wcet.waketech.edu/ajohnson2/WEB250/wordpress/">WordPress Portfolio Project</a></li>
+                    </ul>
+                  </li>
+
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="projects.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Designs
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="projects.html">Projects Homepage</a></li>
-                    <li><a class="dropdown-item" href="https://wcet.waketech.edu/ajohnson2/web225/divgameverse/">Joomla CMS Project</a></li>
-                    <li><a class="dropdown-item" href="https://wcet.waketech.edu/ajohnson2/web140/viciouscycles/index.html">HTML/CSS website development</a></li>
-                    <li><a class="dropdown-item" href="https://wcet.waketech.edu/ajohnson2/web210/portfolio/index.html">Simplified Portfolio Project</a></li>
-                    <li><a class="dropdown-item" href="https://wcet.waketech.edu/ajohnson2/WEB250/wordpress/">WordPress Portfolio Project</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="about.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     About
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                     <li><a class="dropdown-item" href="about.html">About</a></li>
                     <li><a class="dropdown-item" href="contact.html">Contact Me</a></li>
-                    <li><a class="dropdown-item" href="#">Additional Page</a></li>
+
                   </ul>
                 </li>
-              </ul>
-            </div>
           </ul>
         </div>
       </div>
@@ -101,9 +95,9 @@
       </div>
     </section>
     <hr>
-    <div class="footer-dark">
+    <div class="footer-dark text-center">
       <footer>
-          <div class="container">
+          <div class="container-fluid">
               <div class="row">
                   <div class="col-sm-6 col-md-3 item">
                       <h3>Services</h3>
@@ -130,7 +124,9 @@
                         <li class="list-inline-item"><a href="#" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a></li><br>
                         <a href="mailto: ajohnson2@my.waketech.edu">Email Me</a>
                       </ul>
+                      
                   </div>
+                  
                   <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
               </div>
               <p class=""><div class="footcopy">&copy;<em id="date"><span><script>document.write( new Date().getUTCFullYear() );</script></span> - Anthony Johnson - Durham, NC</em></div></p>

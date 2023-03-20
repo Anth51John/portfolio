@@ -1,7 +1,70 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
+form{
+    background: #7d6c6c;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 50px;
+}
+form h3{
+    color:antiquewhite;
+    font-weight:800px;
+    margin-bottom: 20px;
+
+}
+
+form input, form textarea {
+    border: 0;
+    margin:10px;
+    padding: 20px;
+    outline:none;
+    background: #555;
+    font-size: 14px;
+}
+form button{
+    padding: 15px;
+    background:#ff5361;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    outline: none;
+    cursor:pointer;
+    width: 250px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+#tbl-area-expertise{
+    border-collapse: collapse;
+    width: 100%;
+}
+#tbl-area-expertise th, #tbl-area-expertise td{
+    border: 1px solid #7d6c6c;
+    padding: 6px;
+    text-align: center;
+}
+#tbl-area-expertise tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+#tbl-tech-proficiency{
+    border-collapse: collapse;
+    width: 100%;
+}
+#tbl-tech-proficiency th, #tbl-tech-proficiency td{
+    border: 1px solid #7d6c6c;
+    padding: 6px;
+    text-align: center;
+}
+#tbl-tech-proficiency tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
 .nav-custom{
     background-color: #DDDDDD ;
 }
@@ -9,13 +72,21 @@
     background-color: #212529;
 }
 .hero-cover{
-    max-width: 100%;
-    max-height: 50%;
-    background-size:100% 100%
+    object-fit: fill;
+    object-position: 50% 50%;
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+}
+.img-response{
+    max-width:50%;
+    height:50%;
 }
 .myheader{
     font-family: 'Cinzel Decorative', cursive;
+    text-shadow: 1px 2px 0 burlywood;
 }
+
 .mt-0 {
     margin-top: 0 !important;
 }
@@ -23,7 +94,13 @@
 .ml-1 {
     margin-left: 15px;
 }
-  
+.name-title{
+    text-align:center;
+}
+.nav-title{
+    width:100%;
+}
+
 .px-2 {
     padding-left: 25px;
     padding-right: 25px;
@@ -31,6 +108,9 @@
   
 .p-3 {
     padding: 50px;
+}
+.circle-thumb{
+    width:10%
 }
 .footcopy{
     text-align: center;
