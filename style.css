@@ -17,6 +17,7 @@ form h3{
     font-weight:800px;
     margin-bottom: 20px;
 
+
 }
 
 form input, form textarea {
@@ -66,17 +67,26 @@ form button{
 }
 
 .nav-custom{
-    background-color: #DDDDDD ;
+    background-color: #87aed4 ;
 }
 .logo{
-    background-color: #212529;
+    background-color: #ffc107;
+    height: 75px;
+    width: auto;
+    float: left;
+    border-radius:50px;
+    
 }
 .hero-cover{
     object-fit: fill;
     object-position: 50% 50%;
-    width: 100vw;
+    width: 175vw;
     height: 50vh;
     position: relative;
+    opacity: 0.5;
+}
+.hero-index{
+   background: url("img/monitor-1307227_1280.jpg") no-repeat right top;
 }
 .img-response{
     max-width:50%;
@@ -105,6 +115,11 @@ form button{
     padding-left: 25px;
     padding-right: 25px;
 }
+
+.px-3x {
+    padding-left: 100px;
+    padding-right: 100px;
+}
   
 .p-3 {
     padding: 50px;
@@ -112,12 +127,81 @@ form button{
 .circle-thumb{
     width:10%
 }
-.footcopy{
-    text-align: center;
+.footer-wrapper{
+    display:grid;
+    grid-template-columns:auto auto auto;
+ 
+}
+.footer-item-1a{
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.footer-item-1b{
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    list-style-type:none;
+}
+.footer-item-1b ul{
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    list-style-type:none;
+}
+.footer-item-1c{
+    grid-column-start:3;
+    grid-column-end:4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.footer-item-2a{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.footer-item-2b{
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.footer-item-2c{
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.footer-item-3a{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.footer-item-3b{
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.footer-item-3c{
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.footcopy-grid{
+    
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.footer-social-grid{
+    display:inline-grid;
+    grid-template-columns:40px 40px 40px 40px;
+    list-style-type:none;
+
+    
 }
 .footer-dark{
-    background-color: #212529;
+    background-color: #87aed4;
     color:cornsilk;
+    text-shadow: 1px 2px 0 burlywood;
+    grid-gap:10px;
+    padding-left:2%;
 
 }
 .header-project{
