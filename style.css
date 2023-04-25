@@ -93,7 +93,7 @@ form button{
     height:50%;
 }
 .myheader{
-    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Cinzel Decorative', cursive,sans-serif;
     text-shadow: 1px 2px 0 burlywood;
 }
 
@@ -196,12 +196,17 @@ form button{
 
     
 }
-.footer-dark{
+.footer-dark {
     background-color: #87aed4;
-    color:cornsilk;
-    text-shadow: 1px 2px 0 burlywood;
+    color:rgb(82, 77, 59);
     grid-gap:10px;
     padding-left:2%;
+
+}
+.footer-dark ul+li, a{
+    
+    color:rgb(82, 77, 59);
+    
 
 }
 .header-project{
